@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "poetry-poc"
+version ="0.1.2"
+description = "This is poetry poject poc"
+authors = ["Jagdeep Yadav"]
+
+[tool.poetry.dependencies]
+python  = ">=3.8"
+Flask-RESTful = "0.3.9"
+Flask = "2.0.1"
+
+#async_event = {git = "https://github.com/yadavjagdeep/Async-event-trigger.git", rev="dev"}
+async-event = {path = "../Async-event-trigger", develop= true}
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
